@@ -1,0 +1,89 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #4A0E3B; /* Deep Burgundy */
+    color: #EDE0D1; /* Soft Beige */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #3A082E; /* Darker Burgundy */
+  }
+  
+  .navbar h1, .navbar a {
+    color: #F4B6C2; /* Rose Gold */
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  .hero {
+    padding: 50px;
+    text-align: center;
+    background-color: #4A0E3B;
+    color: #FFC0CB; /* Light Pink */
+  }
+  
+  .filter-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #3A082E;
+  }
+  
+  .filter-section select {
+    padding: 10px;
+    margin: 10px;
+    color: #4A0E3B;
+    background-color: #FFC0CB;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .content-section {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Card and Grid Styling */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #3A082E;
+    color: #FFC0CB;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Gallery Styling */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border: 2px solid #FFC0CB;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  

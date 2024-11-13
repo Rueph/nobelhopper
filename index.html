@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nobelhopper - Football Travels</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h1><a href="https://nobelhopper.com" target="_blank">Nobelhopper</a></h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#stadiums">Stadiums</a>
+      <a href="#matches">Matches</a>
+      <a href="#countries">Countries</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="hero">
+      <h2>Welcome to Nobelhopper</h2>
+      <p>Explore the world of football through my eyes, one stadium at a time.</p>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section id="filters" class="filter-section">
+    <h2>Explore My Travels</h2>
+    <label for="countrySelect">Country:</label>
+    <select id="countrySelect" onchange="filterContent()">
+       <option value="all">All Countries</option>
+    </select>
+
+    <label for="stadiumSelect">Stadium:</label>
+    <select id="stadiumSelect" onchange="filterContent()">
+      <option value="all">All Stadiums</option>
+    </select>
+
+    <label for="yearSelect">Year:</label>
+    <select id="yearSelect" onchange="filterContent()">
+      <option value="all">All Years</option>
+    </select>
+
+    <label for="matchSelect">Match:</label>
+    <select id="matchSelect" onchange="filterContent()">
+      <option value="all">All Matches</option>
+    </select>
+  </section>
+
+  <!-- Main Content Sections -->
+  <section id="content">
+    <div id="filteredContent" class="content-section">
+      <h2>Filtered Results</h2>
+      <div class="card-grid" id="contentGrid"></div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="content-section">
+      <h2>Travel Gallery</h2>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
